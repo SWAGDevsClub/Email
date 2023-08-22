@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/20cafe9e9f.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            scale: 1;
+            text-align: center;
+            width: 450px;
+            height: 2000px;
+            background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+        }
+
+        .head {
+            padding-top: 2%;
+            padding-bottom: 2%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            height: 30px;
+            width: 100%;
+            background-color: #101820;
+
+            color: white;
+            position: relative;
+            font-family: 'Kanit', sans-serif;
+            font-size: 30px;
+            font-weight: 400;
+        }
+
+        .cover_img {
+            background-image: url(https://firebasestorage.googleapis.com/v0/b/aicte2-2a28b.appspot.com/o/fotor-ai-20230822172041.jpg?alt=media&token=f96262df-3013-4324-bb5e-790496aabe16);
+            background-size: contain;
+            margin-top: 45px;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 400px;
+            position: absolute;
+            filter: brightness(40%);
+
+        }
+
+        .text_1 {
+            width: 100%;
+            height: 400px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .text_1 p {
+            width: 100%;
+            height: 150px;
+            color: #FEE715;
+            font-size: 30px;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        .text_1 span {
+            background-color: #317773;
+            color: #EEA47F;
+            font-family: 'Kanit', sans-serif;
+            font-size: 20px;
+            width: 250px;
+            height: 30px;
+            margin-top: 2%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .text_2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        .text_2 p {
+            font-size: 25px;
+        }
+
+        .text_2 h1 {
+            scale: 0.9;
+        }
+
+        .text_2 h3 {
+            scale: 0.7;
+        }
+
+        .grid_1,
+        .grid_2,
+        .grid_3,
+        .grid_4 {
+            display: flex;
+            flex-direction: column;
+            width: 450px;
+            gap: 10%;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2%;
+        }
+
+        .item_1 {
+            background-image: url(https://firebasestorage.googleapis.com/v0/b/aicte2-2a28b.appspot.com/o/introduction-concept-word-cork-board-77226561.webp?alt=media&token=1d03e8e9-099f-4917-851b-c659a58fe283);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+            border-radius: 25px;
+            width: 350px;
+            height: 200px;
+            filter: brightness(40%);
+            position: relative;
+        }
+
+        p {
+            position: absolute;
+            width: 300px;
+            color: white;
+            font-size: 20px;
+
+            font-family: 'Kanit', sans-serif;
+        }
+
+        .item_2 {
+            background-image: url(https://firebasestorage.googleapis.com/v0/b/aicte2-2a28b.appspot.com/o/experience-letter-with-examples.jpg?alt=media&token=ec65ce9e-8e65-4c6f-af70-95b414c57b0f);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+            border-radius: 25px;
+            width: 350px;
+            height: 200px;
+            filter: brightness(40%);
+            position: relative;
+
+        }
+
+        .item_3 {
+            background-image: url(https://firebasestorage.googleapis.com/v0/b/aicte2-2a28b.appspot.com/o/project-planning-header%402x.png?alt=media&token=8f7cc22c-70df-45c7-82b1-3b219853f6e1);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+            border-radius: 25px;
+            width: 350px;
+            height: 200px;
+            filter: brightness(40%);
+            position: relative;
+
+        }
+
+        .item_4 {
+            background-image: url(https://firebasestorage.googleapis.com/v0/b/aicte2-2a28b.appspot.com/o/0-1.jpg?alt=media&token=76983972-e7bf-46ea-b153-3552e0ea0149);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+            border-radius: 25px;
+            width: 350px;
+            height: 200px;
+            filter: brightness(50%);
+            position: relative;
+
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 10%;
+            width: 450px;
+            font-family: 'Kanit', sans-serif;
+            gap: 10%;
+        }
+
+        .cont_1 {
+            text-align: left;
+            margin-top: 10%;
+            font-family: 'Kanit', sans-serif;
+            color: #101820;
+            margin-left: 14%;
+            opacity: 0.8;
+        }
+
+        .cont_2 {
+            width: 350px;
+            margin-top: 5%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 5%;
+
+        }
+        .cont_2 h2{
+            margin-top: 2%;
+        }
+
+        .foot {
+            text-align: left;
+            margin-top: 10%;
+            font-family: 'Kanit', sans-serif;
+            color: #101820;
+            margin-left: 15%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="head">SWAG Devs'</div>
+        <div class="cover_img"></div>
+        <div class="text_1">
+
+            <p>UNVEILING CREATIVITY</p>
+            <span>Join Our Open House Meet!</span>
+
+        </div>
+        <div class="text_2">
+            <h1>HELLO Freshies !! </h1>
+            <h3>Welcome to SGGSIE&T!🎉 </h3>
+
+            <h3>🌟 Join us at the Open House Meet 2023 hosted by the SWAG Club – your gateway to the world of web, app,
+                and graphics development. 🚀</h3>
+            <h2>🎈 Here's what's in store for you:</h2>
+        </div>
+        <div class="grid_1">
+            <div class="item_1">
+
+            </div>
+            <p>Discover our mission, goals, and upcoming activities. Find out how you can contribute to exciting
+                projects.</p>
+
+        </div>
+        <div class="grid_2">
+            <div class="item_2"></div>
+            <p>Hear from current club members about their experiences and skills gained.</p>
+        </div>
+        <div class="grid_3">
+            <div class="item_3"></div>
+            <p>Dive into diverse web, app, and game projects that'll amaze you.</p>
+        </div>
+        <div class="grid_4">
+            <div class="item_4"></div>
+            <p> Meet like-minded peers, form study groups, and make lasting connections.</p>
+        </div>
+        <div class="footer">
+            <div class="cont_2">
+                <h3>All levels of coding passion are welcome! 🤝 Let's explore, create, and learn together.</h3>
+                <h2>Excited? We sure are! See you there!</h2>
+            </div>
+
+
+        </div>
+        <div class="cont_1">
+            <h3>🗓️ Date:&ensp;Aug 25th,2023</h3>
+            <h3>⏰ Time:&ensp;5:30 pm</h3>
+            <h3>📍 Location:&ensp;CSE Dept.</h3>
+        </div>
+        <div class="foot">
+            <h3>Best Wishes,</h3>
+            <h2> SGGSIE&T SWAG Club</h2>
+        </div>
+    </div>
+</body>
+
+</html>
